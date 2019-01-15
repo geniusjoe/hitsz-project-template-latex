@@ -1,8 +1,22 @@
-\documentclass{article}
+\documentclass[12pt]{article}
 \usepackage[UTF8]{ctex}
 \usepackage{geometry}
 \usepackage{changepage}
-\geometry{a4paper,left=2cm,right=2cm,top=1cm,bottom=1cm}
+\usepackage{ulem}
+\usepackage{amsmath}
+
+\newcommand{\yihao}{\fontsize{26pt}{36pt}\selectfont}        % 一号, 1.4 倍行距
+\newcommand{\erhao}{\fontsize{22pt}{28pt}\selectfont}        % 二号, 1.25倍行距
+\newcommand{\xiaoer}{\fontsize{18pt}{18pt}\selectfont}       % 小二, 单倍行距
+\newcommand{\sanhao}{\fontsize{16pt}{24pt}\selectfont}       % 三号, 1.5倍行距
+\newcommand{\xiaosan}{\fontsize{15pt}{22pt}\selectfont}      % 小三, 1.5倍行距
+\newcommand{\sihao}{\fontsize{14pt}{21pt}\selectfont}        % 四号, 1.5 倍行距
+\newcommand{\banxiaosi}{\fontsize{13pt}{19.5pt}\selectfont}  % 半小四, 1.5倍行距
+\newcommand{\xiaosi}{\fontsize{12pt}{18pt}\selectfont}       % 小四, 1.5倍行距
+\newcommand{\dawuhao}{\fontsize{11pt}{11pt}\selectfont}      % 大五号, 单倍行距
+\newcommand{\wuhao}{\fontsize{10.5pt}{15.75pt}\selectfont}   % 五号, 单倍行距
+
+
 \title{
 	\begin{adjustwidth}{-1cm}{-1cm}
 	\Huge 
@@ -18,9 +32,48 @@
 \date{}
 
 \begin{document}
+\newgeometry{a4paper,left=2cm,right=2cm,top=1cm,bottom=1cm}
 \maketitle
-\vspace*{2\baselineskip}
-%\vspace{2cm}
+\textbf{\begin{flushleft}
+		{\sihao
+			\makebox[0.9\textwidth][c]{
+				\makebox[0.2\textwidth][r]{项目名称: }
+				\uline{\makebox[0.72\textwidth][c]{ 这里填入您的项目名  }}}\\
+			\makebox[0.9\textwidth][c]{
+				\makebox[0.2\textwidth][r]{项目负责人: }
+				\uline{\makebox[0.25\textwidth][c]{ 负责人名称  }}
+				\makebox[0.15\textwidth][r]{学号: }
+				\uline{\makebox[0.3\textwidth][c]{ 学号名称  }}}\\
+			\makebox[0.9\textwidth][c]{
+				\makebox[0.2\textwidth][r]{联系电话: }
+				\uline{\makebox[0.25\textwidth][c]{ 联系人电话  }}
+				\makebox[0.15\textwidth][r]{电子邮箱: }
+				\uline{\makebox[0.3\textwidth][c]{ 邮箱名称  }}}\\
+			\makebox[0.9\textwidth][c]{
+				\makebox[0.2\textwidth][r]{学 院 : }
+				\uline{\makebox[0.72\textwidth][c]{ 计算机科学与技术学院   }}}\\~\\
+			\makebox[0.9\textwidth][c]{
+				\makebox[0.2\textwidth][r]{ 指导教师: }
+				\uline{\makebox[0.25\textwidth][c]{ 教师名 }}
+				\makebox[0.15\textwidth][r]{职称: }
+				\uline{\makebox[0.3\textwidth][c]{ 教师职称  }}}\\
+			\makebox[0.9\textwidth][c]{
+				\makebox[0.2\textwidth][r]{联系电话: }
+				\uline{\makebox[0.25\textwidth][c]{ 联系人电话  }}
+				\makebox[0.15\textwidth][r]{电子邮箱: }
+				\uline{\makebox[0.3\textwidth][c]{ 邮箱名称  }}}\\
+			\makebox[0.9\textwidth][c]{
+				\makebox[0.2\textwidth][r]{学 院 : }
+				\uline{\makebox[0.72\textwidth][c]{ 计算机科学与技术学院   }}}\\
+			\vspace*{5\baselineskip}
+			\makebox[\textwidth][c]{ 填表日期 : 2019 年 1 月 11 日  }
+		}
+	\end{flushleft}
+}
+
+
+\restoregeometry
+
 \section{Introduction}
 Here comes \LaTeX!
 \subsection{Font Settings}
