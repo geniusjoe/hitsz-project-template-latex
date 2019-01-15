@@ -4,6 +4,16 @@
 \usepackage{changepage}
 \usepackage{ulem}
 \usepackage{adjustbox}
+\usepackage{tikz}
+\usepackage[breakable]{tcolorbox}
+
+\newtcolorbox{stretchbox}[1][]{
+  height fill,
+  sharp corners,
+  colback=white,
+  colframe=black,
+  boxrule=.4pt,
+  #1}
 
 \newcommand{\yihao}{\fontsize{26pt}{36pt}\selectfont}        % 一号, 1.4 倍行距
 \newcommand{\erhao}{\fontsize{22pt}{28pt}\selectfont}        % 二号, 1.25倍行距
@@ -79,7 +89,7 @@
 		\begin{tabular}{|c|c|c|c|c|c|}
 			\hline
 			\textbf{姓名}         & \textbf{性别} & \textbf{所在学院} & \textbf{学号} & \textbf{联系电话} & \textbf{本人签字} \\ \hline
-			\textbf{Dark Ninja}   & \textbf{}     & \textbf{}         & \textbf{}     & \textbf{}         & \textbf{}         \\ \hline
+			\textbf{Dark Ninja}   & \textbf{男}     & \textbf{计算机科学与技术}         & \textbf{SZ123456789}     & \textbf{13567898765}         & \textbf{}         \\ \hline
 			\textbf{Ninja Slayer} & \textbf{}     & \textbf{}         & \textbf{}     & \textbf{}         & \textbf{}         \\ \hline
 			\textbf{}             & \textbf{}     & \textbf{}         & \textbf{}     & \textbf{}         & \textbf{}         \\ \hline
 			\textbf{}             & \textbf{}     & \textbf{}         & \textbf{}     & \textbf{}         & \textbf{}         \\ \hline
@@ -89,4 +99,13 @@
 \end{table}
 
 \section{ 立项报告 }
+\subsection{ 立项背景 }
+\begin{stretchbox}{%
+  \textbf{Subordinated bond} 
+  \par
+  \textbf{Senior} 做个小游戏出来%
+  \vfill
+  \hfill
+}
+\end{stretchbox}
 \end{document}
