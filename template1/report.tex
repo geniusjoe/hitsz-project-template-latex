@@ -7,14 +7,8 @@
 \usepackage{tikz}
 \usepackage[breakable]{tcolorbox}
 \usepackage{array,booktabs,ragged2e}
+\usepackage{mdframed}
 
-\newtcolorbox{stretchbox}[1][]{
-  height fill,
-  sharp corners,
-  colback=white,
-  colframe=black,
-  boxrule=.4pt,
-  #1}
   \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
   \newcolumntype{R}[1]{>{\RaggedLeft\arraybackslash}p{#1}}
 
@@ -55,14 +49,14 @@
 				{\setlength{\extrarowheight}{10pt}%
 					% 在 textbf{}中填入所需的文字
 					\begin{tabular}{R{0.15\textwidth}R{0.2\textwidth}R{0.15\textwidth}R{0.2\textwidth}}
-						\textbf{项目名称:}   & \multicolumn{3}{c}{\textbf{}}                                                      \\ \cline{2-4}
-						\textbf{项目负责人:} & \multicolumn{1}{c}{\textbf{}} & \textbf{学号:}     & \multicolumn{1}{c}{\textbf{}} \\ \cline{2-2} \cline{4-4}
-						\textbf{联系电话:}   &                               & \textbf{电子邮箱:} &                               \\ \cline{2-2} \cline{4-4}
-						\textbf{学院:}       & \multicolumn{3}{l}{}                                                               \\ \cline{2-4}
-						\multicolumn{4}{l}{\textbf{}}                                                                             \\
-						\textbf{指导教师:}   &                               & \textbf{职称:}     &                               \\ \cline{2-2} \cline{4-4}
-						\textbf{联系电话:}   &                               & \textbf{电子邮箱:} &                               \\ \cline{2-2} \cline{4-4}
-						\textbf{学  院:}     & \multicolumn{3}{l}{}                                                               \\ \cline{2-4}
+						\textbf{项目名称:}   & \multicolumn{3}{c}{\textbf{}}                                                        \\ \cline{2-4}
+						\textbf{项目负责人:} & \multicolumn{1}{c}{\textbf{}} & \textbf{学\qquad号:} & \multicolumn{1}{c}{\textbf{}} \\ \cline{2-2} \cline{4-4}
+						\textbf{联系电话:}   &                               & \textbf{电子邮箱:}   &                               \\ \cline{2-2} \cline{4-4}
+						\textbf{学\qquad院:} & \multicolumn{3}{l}{}                                                                 \\ \cline{2-4}
+						\multicolumn{4}{l}{\textbf{}}                                                                               \\
+						\textbf{指导教师:}   &                               & \textbf{职\qquad称:} &                               \\ \cline{2-2} \cline{4-4}
+						\textbf{联系电话:}   &                               & \textbf{电子邮箱:}   &                               \\ \cline{2-2} \cline{4-4}
+						\textbf{学\qquad院:} & \multicolumn{3}{l}{}                                                                 \\ \cline{2-4}
 					\end{tabular}}
 			\end{table}
 			\vspace*{5\baselineskip}
@@ -78,6 +72,7 @@
 	\begin{adjustbox}{width=1\textwidth}
 		\begin{tabular}{|c|c|c|c|c|c|}
 			\hline
+			% （包括项目负责人、按顺序）
 			\textbf{姓名}         & \textbf{性别} & \textbf{所在学院}         & \textbf{学号}        & \textbf{联系电话}    & \textbf{本人签字} \\ \hline
 			\textbf{Dark Ninja}   & \textbf{男}   & \textbf{计算机科学与技术} & \textbf{SZ123456789} & \textbf{13567898765} & \textbf{}         \\ \hline
 			\textbf{Ninja Slayer} & \textbf{}     & \textbf{}                 & \textbf{}            & \textbf{}            & \textbf{}         \\ \hline
@@ -89,13 +84,40 @@
 \end{table}
 
 \section{ 立项报告 }
-\subsection{ 立项背景 }
-\begin{stretchbox}{%
-		\textbf{Subordinated bond}
-		\par
-		\textbf{Senior} 做个小游戏出来%
-		\vfill
-		\hfill
+%（字数在2000字以上，篇幅不够可附页）
+\begin{mdframed}{%
+		\subsection{ 立项背景 } % (研究现状、趋势、研究意义等）
+		\subsection{ 项目研究内容及实施方案 }
+		\subsection{ 进度安排 }
+		\subsection{ 主要参考文献 } % (参考文献书写顺序：序号 作者.文章名.学术刊物名.年，卷（期：引用起止页.)
+		\vfil
 	}
-\end{stretchbox}
+\end{mdframed}
+
+
+\pagebreak % 换页
+\section{ 指导教师意见 }
+\begin{mdframed}{%
+		\vspace*{8\baselineskip}
+		\hspace{.6\textwidth}
+		\begin{sihao}
+			签\qquad名:\\
+		\end{sihao}
+		\begin{xiaosi}
+			\\\rightline{年\qquad\qquad月\qquad\qquad日\qquad\qquad}
+		\end{xiaosi}
+	}
+\end{mdframed}
+
+\section{ 评审专家组意见 }
+\begin{mdframed}{%
+		\vspace*{8\baselineskip}
+		\begin{sihao}
+			批准经费: \hspace{.2\textwidth} 元, \hspace{.1\textwidth}组长签名:\\
+		\end{sihao}
+		\begin{xiaosi}
+			\\\rightline{年\qquad\qquad月\qquad\qquad日\qquad\qquad}
+		\end{xiaosi}
+	}
+\end{mdframed}
 \end{document}
