@@ -1,6 +1,6 @@
 \LoadClass{article}
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{prject_env}
+\ProvidesClass{project_env}
 
 \usepackage[UTF8]{ctex}
 \usepackage{geometry}
