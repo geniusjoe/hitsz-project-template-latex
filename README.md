@@ -22,4 +22,4 @@ hitsz 立项 开题报告 latex 模板
 
 sublime 中 ctrl + b 之后生成的图片大概如下图所示.
 
-![success_flag](https://github.com/geniusjoe/hitsz-xuetangx-/blob/master/pictures/TIM%E6%88%AA%E5%9B%BE20181228085819.png)
+![success_flag](https://github.com/geniusjoe/hitsz-project-template-latex/blob/master/pics/front%20page.png)
