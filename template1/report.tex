@@ -1,44 +1,15 @@
-\documentclass[12pt]{article}
-\usepackage[UTF8]{ctex}
-\usepackage{geometry}
-\usepackage{changepage}
-\usepackage{ulem}
-\usepackage{adjustbox}
-\usepackage{tikz}
-\usepackage[breakable]{tcolorbox}
-\usepackage{array,booktabs,ragged2e}
-\usepackage{mdframed}
+%\documentclass[12pt]{article}
+\documentclass{project_env}
 
-  \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
-  \newcolumntype{R}[1]{>{\RaggedLeft\arraybackslash}p{#1}}
-
-\newcommand{\yihao}{\fontsize{26pt}{36pt}\selectfont}        % 一号, 1.4 倍行距
-\newcommand{\erhao}{\fontsize{22pt}{28pt}\selectfont}        % 二号, 1.25倍行距
-\newcommand{\xiaoer}{\fontsize{18pt}{18pt}\selectfont}       % 小二, 单倍行距
-\newcommand{\sanhao}{\fontsize{16pt}{24pt}\selectfont}       % 三号, 1.5倍行距
-\newcommand{\xiaosan}{\fontsize{15pt}{22pt}\selectfont}      % 小三, 1.5倍行距
-\newcommand{\sihao}{\fontsize{14pt}{21pt}\selectfont}        % 四号, 1.5 倍行距
-\newcommand{\banxiaosi}{\fontsize{13pt}{19.5pt}\selectfont}  % 半小四, 1.5倍行距
-\newcommand{\xiaosi}{\fontsize{12pt}{18pt}\selectfont}       % 小四, 1.5倍行距
-\newcommand{\dawuhao}{\fontsize{11pt}{11pt}\selectfont}      % 大五号, 单倍行距
-\newcommand{\wuhao}{\fontsize{10.5pt}{15.75pt}\selectfont}   % 五号, 单倍行距
-
-
-\title{
-	\begin{adjustwidth}{-1cm}{-1cm}
-	\Huge 
-	\centering
-	\heiti 
-	\textbf{
+% 设置标题
+\settitle{
 		哈尔滨工业大学（深圳）
 		\\计算机科学与技术学院
-		\\学术俱乐部创新实践项目立项申请书  
-		}
-	\end{adjustwidth}	
-}
+		\\学术俱乐部创新实践项目立项申请书}
 \date{}
 \author{}
 
+% 封面的表格 (在 textbf{} 括号中填入所需的内容 )
 \begin{document}
 \newgeometry{left=2cm,right=2cm,top=1cm,bottom=1cm}
 \maketitle
@@ -85,15 +56,16 @@
 
 \section{ 立项报告 }
 %（字数在2000字以上，篇幅不够可附页）
+% 正文部分
 \begin{mdframed}{%
 		\subsection{ 立项背景 } % (研究现状、趋势、研究意义等）
+		% 在此处加入对应的正文
 		\subsection{ 项目研究内容及实施方案 }
 		\subsection{ 进度安排 }
 		\subsection{ 主要参考文献 } % (参考文献书写顺序：序号 作者.文章名.学术刊物名.年，卷（期：引用起止页.)
 		\vfil
 	}
 \end{mdframed}
-
 
 \pagebreak % 换页
 \section{ 指导教师意见 }
