@@ -16,7 +16,7 @@ hitsz 立项 开题报告 latex 模板
 
 [清华 TeXLive 源](https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/)
 
-个人使用 sublime + LaTeXTools 进行 latex 文本编辑, 在编辑之后如果没有文献参考需求就在 sublime 中 ctrl + b 直接编译就可以了.
+个人使用 sublime + LaTeXTools 进行 latex 文本编辑, 在编辑之后如果没有文献参考需求就在 sublime 中 ctrl + b 直接编译就可以.
 
 如果有文献参考需求就不要用 sublime 进行编译. 使用 texlive 自带的 TeXworks 文本编辑器进行编译(下文有教程)
 
